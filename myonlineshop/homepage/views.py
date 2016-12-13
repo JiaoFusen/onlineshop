@@ -1,6 +1,7 @@
 #coding:utf-8
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse(u"welcome to the homepage!")
+    return render(request,'index.html')
 # Create your views here.
